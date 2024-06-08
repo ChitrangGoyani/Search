@@ -1,0 +1,11 @@
+# Dockerfile for Logstash
+FROM docker.elastic.co/logstash/logstash:8.14.0
+
+# Download the PostgreSQL JDBC driver
+RUN curl -L -o /usr/share/logstash/logstash-core/lib/jars/postgresql.jar \
+    https://jdbc.postgresql.org/download/postgresql-42.7.3.jar
+
+RUN chmod +x /usr/share/logstash/logstash-core/lib/jars/postgresql.jar
+
+# Copy the pipeline configuration
+COPY logstash-pipeline /usr/share/logstash/pipeline

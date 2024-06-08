@@ -1,0 +1,19 @@
+- pipeline.id: fake_education
+  path.config: "/usr/share/logstash/pipeline/fake_education.conf"
+
+- pipeline.id: fake_experience
+  path.config: "/usr/share/logstash/pipeline/fake_experience.conf"
+
+- pipeline.id: fake_profiles
+  path.config: "/usr/share/logstash/pipeline/.conf"
+
+- pipeline.id: fake_skills
+  path.config: "/usr/share/logstash/pipeline/fake_profiles.conf"
+
+- pipeline.id: fake_users
+  path.config: "/usr/share/logstash/pipeline/fake_users.conf"
+
+
+
+
+

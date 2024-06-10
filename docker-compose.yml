@@ -17,7 +17,7 @@ networks:
     name: elastic
     external: false
   network_pg:
-    name: new-test_default
+    name: postgres-config_default
     external: true
     
   

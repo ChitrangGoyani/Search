@@ -5,15 +5,10 @@
   path.config: "/usr/share/logstash/pipeline/fake_experience.conf"
 
 - pipeline.id: fake_profiles
-  path.config: "/usr/share/logstash/pipeline/.conf"
+  path.config: "/usr/share/logstash/pipeline/fake_profiles.conf"
 
 - pipeline.id: fake_skills
-  path.config: "/usr/share/logstash/pipeline/fake_profiles.conf"
+  path.config: "/usr/share/logstash/pipeline/fake_skills.conf"
 
 - pipeline.id: fake_users
   path.config: "/usr/share/logstash/pipeline/fake_users.conf"
-
-
-
-
-
